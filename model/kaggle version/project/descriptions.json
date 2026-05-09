@@ -1,0 +1,111 @@
+[
+  {
+    "label": "AnnualCrop",
+    "texts": [
+      "Agricultural crop field with seasonal vegetation and moderate humidity.",
+      "Fertile farming region suitable for crop cultivation and pollinator activity.",
+      "Managed agricultural landscape with periodic vegetation cycles.",
+      "Temperate agricultural ecosystem with cultivated vegetation.",
+      "Human-managed cropland with moderate biodiversity."
+    ]
+  },
+
+  {
+    "label": "Forest",
+    "texts": [
+      "Dense temperate forest with rich biodiversity and moderate humidity.",
+      "Vegetation-rich ecosystem suitable for mammals and woodland birds.",
+      "Cool forest habitat with dense canopy coverage and wildlife activity.",
+      "Potential habitat for wolves, deer, and forest species.",
+      "High vegetation density region with ecological diversity."
+    ]
+  },
+
+  {
+    "label": "HerbaceousVegetation",
+    "texts": [
+      "Grassland ecosystem with herbaceous vegetation and shrubs.",
+      "Semi-humid vegetation region suitable for grazing animals.",
+      "Open vegetation landscape with moderate biodiversity.",
+      "Natural grass-covered ecosystem with ecological stability.",
+      "Habitat suitable for insects, pollinators, and herbivores."
+    ]
+  },
+
+  {
+    "label": "Highway",
+    "texts": [
+      "Urban transportation corridor crossing developed land.",
+      "Human-made roadway infrastructure with low vegetation.",
+      "Road network surrounded by sparse ecological activity.",
+      "Developed transportation system with fragmented habitat.",
+      "Artificial infrastructure region with minimal biodiversity."
+    ]
+  },
+
+  {
+    "label": "Industrial",
+    "texts": [
+      "Industrial region with dense infrastructure and limited vegetation.",
+      "Urban-industrial landscape with environmental stress.",
+      "Highly developed industrial zone with low biodiversity.",
+      "Pollution-prone infrastructure region with ecological degradation.",
+      "Human-engineered industrial ecosystem with sparse greenery."
+    ]
+  },
+
+  {
+    "label": "Pasture",
+    "texts": [
+      "Open pasture land suitable for grazing livestock.",
+      "Grass-covered ecosystem with moderate ecological diversity.",
+      "Agricultural grazing region with herbaceous vegetation.",
+      "Natural pasture environment supporting grazing animals.",
+      "Semi-rural grassland ecosystem with moderate biodiversity."
+    ]
+  },
+
+  {
+    "label": "PermanentCrop",
+    "texts": [
+      "Permanent crop plantation with cultivated vegetation patterns.",
+      "Long-term agricultural ecosystem with managed crop growth.",
+      "Warm agricultural region suitable for orchards and plantations.",
+      "Cultivated farming landscape with moderate biodiversity.",
+      "Managed crop ecosystem with stable vegetation cover."
+    ]
+  },
+
+  {
+    "label": "Residential",
+    "texts": [
+      "Urban residential region with human settlements and infrastructure.",
+      "Developed suburban ecosystem with scattered vegetation.",
+      "Human-dominated residential landscape with roads and buildings.",
+      "Urbanized habitat with low ecological diversity.",
+      "City residential environment with limited natural vegetation."
+    ]
+  },
+
+  {
+    "label": "River",
+    "texts": [
+      "Freshwater river ecosystem with riparian vegetation.",
+      "Aquatic habitat suitable for fish and migratory birds.",
+      "Flowing water system surrounded by vegetation and wetlands.",
+      "River landscape with ecological biodiversity and water access.",
+      "Natural freshwater corridor supporting aquatic species."
+    ]
+  },
+
+  {
+    "label": "SeaLake",
+    "texts": [
+      "Cold aquatic environment with reflective water surfaces.",
+      "Large lake or sea ecosystem suitable for aquatic biodiversity.",
+      "Water-dominated landscape with low terrestrial vegetation.",
+      "Potential habitat for migratory birds and aquatic mammals.",
+      "Cool aquatic ecosystem influenced by climate and water cycles."
+    ]
+  }
+]
