@@ -101,14 +101,11 @@ WildSAT
 │
 ├── server/                 # FastAPI backend
 │
-├── data/
+├── data/                    
 │   ├── raw/
-│   ├── embeddings/
-│   └── descriptions.json
+│   ├── processed/
 │
-├── models/
-│
-├── checkpoints/
+├── model/
 │
 └── README.md
 ```
