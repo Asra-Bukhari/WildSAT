@@ -32,7 +32,7 @@ app.include_router(upload_router)
 # -----------------------------
 # Base Paths
 # -----------------------------
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parents[1]
 
 IMAGE_DIR = BASE_DIR / "data" / "raw" / "eurosat"
 
