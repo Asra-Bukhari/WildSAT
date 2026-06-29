@@ -1,3 +1,4 @@
+import os
 import pickle
 import random
 import numpy as np
@@ -93,7 +94,8 @@ def convert_to_url(path):
     class_name = path.parent.name
     file_name = path.name
 
-    return f"http://127.0.0.1:8000/images/{class_name}/{file_name}"
+    base_url = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
+    return f"{base_url}/images/{class_name}/{file_name}"
 
 
 # =====================================================

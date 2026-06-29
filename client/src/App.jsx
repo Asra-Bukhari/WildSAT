@@ -6,6 +6,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { generateCoordinates } from "./utils/generateCoordinates";
 import { ecologyInfo } from "./utils/ecologyInfo";
 import "./App.css";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 function App() {
   const [mode, setMode] = useState(null);
@@ -26,7 +27,7 @@ function App() {
     setSelected(null);
     try {
       const res = await axios.get(
-        `http://127.0.0.1:8000/search?query=${encodeURIComponent(query)}`
+        `${API_BASE_URL}/search?query=${encodeURIComponent(query)}`
       );
       const enriched = res.data.results.map((item, i) => {
         const [lng, lat] = generateCoordinates(i);
@@ -56,7 +57,7 @@ function App() {
     const fd = new FormData();
     fd.append("file", file);
     try {
-      const res = await axios.post("http://127.0.0.1:8000/upload", fd, {
+      const res = await axios.post(`${API_BASE_URL}/upload`, fd, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setAnalysisResult(res.data);
