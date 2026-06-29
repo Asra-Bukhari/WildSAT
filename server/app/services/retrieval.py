@@ -12,7 +12,7 @@ with open(DB_PATH, "rb") as f:
     database = pickle.load(f)
 
 image_embeddings = database["embeddings"]
-image_paths = database["paths"]
+image_paths = [str(p).replace("\\", "/") for p in database["paths"]]
 
 
 # =====================================================

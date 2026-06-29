@@ -1346,81 +1346,209 @@
 }
 
 /* =========================================
-   RESPONSIVE
+   RESPONSIVE — TABLET (≤ 820px)
    ========================================= */
 @media (max-width: 820px) {
   .header {
-    padding: 16px 20px 14px;
+    padding: 14px 16px 12px;
   }
   .header--compact {
-    padding: 8px 16px;
+    padding: 10px 16px;
   }
 
   .header-inner,
   .header--compact .header-inner {
     flex-direction: column;
-    gap: 10px;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .header-brand {
+    justify-content: center;
   }
 
   .brand-title {
     font-size: 18px;
   }
+  .brand-subtitle {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .search-section {
+    gap: 4px;
+  }
+
+  .search-tagline {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .search-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .search-input-group {
+    flex: 1 1 100%;
+    order: 1;
+  }
+
+  .search-input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    flex: 1 1 auto;
+    order: 2;
+    justify-content: center;
+    padding: 10px 16px;
+  }
 
   .search-btn span {
     display: none;
   }
-  .search-btn {
-    padding: 11px 14px;
+
+  .search-btn .btn-icon {
+    width: 18px;
+    height: 18px;
   }
 
+  .reset-btn {
+    width: 40px;
+    height: 40px;
+    order: 3;
+  }
+
+  .back-btn {
+    order: 4;
+    margin-left: 0;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  /* Landing page */
   .landing-title {
     font-size: 22px;
+    padding: 0 12px;
+  }
+
+  .landing-text {
+    font-size: 13px;
+    padding: 0 16px;
   }
 
   .landing-visual {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
   }
   .ring-1 {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
   .ring-2 {
-    width: 112px;
-    height: 112px;
+    width: 108px;
+    height: 108px;
   }
   .landing-globe {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
   }
   .landing-glow {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
   }
 
-  .custom-popup .mapboxgl-popup-content {
-    width: 200px;
-  }
-  .popup-image-wrap {
-    height: 130px;
-  }
-
-  /* Mode cards stack on mobile */
+  /* Mode cards stack */
   .mode-cards {
     flex-direction: column;
     align-items: center;
     max-width: 400px;
+    gap: 14px;
+    padding: 0 16px;
   }
 
   .mode-card {
     width: 100%;
-    padding: 24px 20px;
+    padding: 22px 18px;
+    gap: 10px;
   }
 
-  /* Diagnosis layout stacks on mobile */
+  .mode-card-title {
+    font-size: 15px;
+  }
+
+  .mode-card-desc {
+    font-size: 12px;
+  }
+
+  .mode-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* MAP — account for taller stacked header */
+  .map-area {
+    /* On mobile the stacked header is approx 130px tall */
+    top: 0;
+  }
+
+  /* Make map markers easier to tap */
+  .marker-pin {
+    width: 30px;
+    height: 42px;
+  }
+
+  /* Popup */
+  .custom-popup .mapboxgl-popup-content {
+    width: 200px;
+  }
+  .popup-image-wrap {
+    height: 120px;
+  }
+  .popup-body {
+    padding: 10px 12px 12px;
+  }
+  .popup-title {
+    font-size: 13px;
+  }
+
+  /* Results bar */
+  .results-bar {
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+  .results-bar-inner {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* Upload */
+  .upload-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .upload-prompt-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Diagnosis results — stacked layout */
+  .diagnosis-main {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 0;
+    overflow-y: auto;
+  }
+
   .diagnosis-layout {
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: visible;
+    min-height: 0;
   }
 
   .diagnosis-image-col {
@@ -1429,7 +1557,7 @@
   }
 
   .diagnosis-image-card {
-    max-height: 40vh;
+    max-height: 35vh;
   }
 
   .diagnosis-info-col {
@@ -1442,14 +1570,217 @@
     overflow: visible;
   }
 
-  .diagnosis-main {
-    padding-top: 105px;
-    position: relative;
-    height: auto;
-    min-height: calc(100vh - 105px);
-  }
-
   .diagnosis-grid {
     grid-template-columns: 1fr;
   }
+
+  .diagnosis-eco {
+    font-size: 22px;
+  }
+
+  .diagnosis-title {
+    font-size: 13px;
+  }
+
+  .diagnosis-conf-value {
+    font-size: 18px;
+  }
+
+  .diagnosis-analysis {
+    padding: 16px;
+  }
+
+  .diagnosis-analysis-text {
+    font-size: 12px;
+  }
 }
+
+/* =========================================
+   RESPONSIVE — SMALL PHONE (≤ 480px)
+   ========================================= */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 12px 10px;
+  }
+  .header--compact {
+    padding: 8px 12px;
+  }
+
+  .brand-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .brand-title {
+    font-size: 16px;
+  }
+  .brand-subtitle {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .search-input {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .search-input-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+  }
+
+  .search-btn {
+    padding: 9px 14px;
+  }
+
+  .reset-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .back-btn {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .landing-main {
+    padding: 0 8px;
+  }
+
+  .landing-title {
+    font-size: 19px;
+  }
+
+  .landing-text {
+    font-size: 12px;
+  }
+
+  .landing-visual {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+  }
+  .ring-1 {
+    width: 120px;
+    height: 120px;
+  }
+  .ring-2 {
+    width: 86px;
+    height: 86px;
+  }
+  .landing-globe {
+    width: 48px;
+    height: 48px;
+  }
+  .landing-glow {
+    width: 150px;
+    height: 150px;
+  }
+
+  .mode-cards {
+    padding: 0 8px;
+    gap: 10px;
+  }
+
+  .mode-card {
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .mode-card-title {
+    font-size: 14px;
+  }
+
+  .mode-card-desc {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .mode-card-action {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+
+  .mode-card-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Popup on small screens */
+  .custom-popup .mapboxgl-popup-content {
+    width: 180px;
+  }
+  .popup-image-wrap {
+    height: 100px;
+  }
+  .popup-title {
+    font-size: 12px;
+  }
+  .popup-item-label {
+    font-size: 9px;
+  }
+  .popup-item strong {
+    font-size: 10px;
+  }
+
+  /* Upload button */
+  .upload-btn {
+    padding: 9px 14px;
+    font-size: 12px;
+  }
+
+  .upload-prompt-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Diagnosis */
+  .diagnosis-image-col {
+    padding: 12px;
+  }
+
+  .diagnosis-image-card {
+    max-height: 30vh;
+    border-radius: 12px;
+  }
+
+  .diagnosis-info-col {
+    padding: 0 12px 20px;
+  }
+
+  .diagnosis-eco {
+    font-size: 20px;
+  }
+
+  .diagnosis-grid-item {
+    padding: 10px 12px;
+  }
+
+  .diagnosis-grid-label {
+    font-size: 9px;
+  }
+
+  .diagnosis-grid-value {
+    font-size: 12px;
+  }
+
+  .diagnosis-confidence-bar {
+    padding: 14px 16px;
+    margin-bottom: 20px;
+  }
+
+  .diagnosis-analysis {
+    padding: 14px;
+    margin-bottom: 20px;
+  }
+
+  .diagnosis-analysis-title {
+    font-size: 13px;
+  }
+
+  .diagnosis-analysis-text {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+}
+

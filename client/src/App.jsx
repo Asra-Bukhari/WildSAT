@@ -3,7 +3,7 @@ import axios from "axios";
 import Map from "react-map-gl/mapbox";
 import { Marker, Popup } from "react-map-gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { generateCoordinates } from "./utils/generateCoordinates";
+import { generateCoordinates, refreshCoordinateSalt } from "./utils/generateCoordinates";
 import { ecologyInfo } from "./utils/ecologyInfo";
 import "./App.css";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
@@ -29,8 +29,10 @@ function App() {
       const res = await axios.get(
         `${API_BASE_URL}/search?query=${encodeURIComponent(query)}`
       );
+      // Refresh salt so each search produces unique locations
+      refreshCoordinateSalt();
       const enriched = res.data.results.map((item, i) => {
-        const [lng, lat] = generateCoordinates(i);
+        const [lng, lat] = generateCoordinates(i, query);
         return { ...item, longitude: lng, latitude: lat };
       });
       setResults(enriched);

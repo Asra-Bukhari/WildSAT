@@ -10,7 +10,7 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: #0a0e17;
   color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
