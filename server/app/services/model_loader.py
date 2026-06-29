@@ -16,9 +16,17 @@ load_dotenv()
 # IMPORT MODEL
 # =====================================================
 
-BASE_DIR = Path(__file__).resolve().parents[3]
+# Find the model directory in the parent tree
+base_dir = None
+for parent in Path(__file__).resolve().parents:
+    if (parent / "model").is_dir():
+        base_dir = parent
+        break
 
-sys.path.append(str(BASE_DIR / "model"))
+if base_dir:
+    sys.path.append(str(base_dir / "model"))
+else:
+    sys.path.append(str(Path(__file__).resolve().parents[3] / "model"))
 
 from model import CLIPModel
 
