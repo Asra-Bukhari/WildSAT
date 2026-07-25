@@ -1,4 +1,4 @@
-# WildSAT — Ecological Intelligence Dashboard
+# WildSAT: Ecological Intelligence Dashboard
 
 WildSAT is an AI-powered ecological intelligence system that performs semantic retrieval and ecosystem analysis from satellite imagery using multimodal deep learning.
 
